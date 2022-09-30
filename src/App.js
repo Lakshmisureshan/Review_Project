@@ -1,11 +1,17 @@
-import React from "react";
-import "./style.css";
-
-export default function App() {
+import React from 'react';
+import Review from './Review';
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <main>
+      <section className="container">
+        <div className="title">
+          <h2>our reviews</h2>
+          <div className="underline"></div>
+        </div>
+        <Review />
+      </section>
+    </main>
   );
 }
+
+export default App;
